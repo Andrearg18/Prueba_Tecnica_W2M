@@ -1,0 +1,51 @@
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h5 class="title">NUEVO HÉROE</h5>
+
+      <div class="modal-body">
+        <form [formGroup]="form">
+            <div class="row">
+
+                <div class="col-md-5 form-group">
+                    <!--<input [(ngModel)]="imagen" formControlName="imagen" id="imagen" class="form-control" type="file"  (change)="onFileSelected($event)" maxlength="46" required />-->
+                    <img src={{imagen}} id="imagen"/>
+                </div>
+
+                <div class="col-md-7 form-group" id="nombre">
+                    <input [(ngModel)]="nombre" formControlName="nombre" class="form-control" type="text" maxlength="50" size="100" placeholder="Nombre..." required/>
+                </div>
+
+                <div class="col-md-1 form-group" id="icono" (click)="subirFoto()">
+                    ↥
+                </div>
+
+                <div class="col-md-10 form-group">
+                    <input [(ngModel)]="ruta" formControlName="ruta" class="margin-top form-control" type="text" size="200" placeholder="Ruta de la imágen..."/>
+                </div>
+
+                <div class="col-md-1 form-group" id="icono" (click)="borrarFoto()">
+                    x
+                </div>
+                
+                <hr>
+
+                <div class="form-group">
+                    <div class="label-descripcion">
+                        <label for="descripcion" class="margin-top">Descripción</label>
+                    </div>
+                    <textarea [(ngModel)]="descripcion" formControlName="descripcion" class="form-control" id="descripcion" style="height: 150px" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input [(ngModel)]="nacimiento" formControlName="nacimiento" class="form-control" id="nacimiento" type="text" maxlength="73" placeholder="Lugar de nacimiento..." required/>
+                </div>
+
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="crear()">Crear</button>
+                <button type="button" class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
+                </div>
+
+            </div>
+        </form>
+      </div>
+  </div>

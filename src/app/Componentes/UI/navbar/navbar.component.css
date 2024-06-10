@@ -1,0 +1,11 @@
+nav {
+    background-color: rgb(74, 74, 74);
+}
+
+.titulo {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px; 
+    letter-spacing: 5px;
+    color: white; 
+    text-align: center;
+}

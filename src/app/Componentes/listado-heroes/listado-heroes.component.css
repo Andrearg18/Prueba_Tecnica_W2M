@@ -1,0 +1,44 @@
+.mensaje{
+    margin-top: 30%;
+    text-align: center;
+    color: rgb(112, 112, 161);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.listado{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.item:hover{
+    cursor: pointer;
+}
+.btn{
+    border: none;
+    width: 250px;
+    font-size: x-large;
+    margin-left: 50px;
+    background-color: rgb(57, 101, 154);
+    box-shadow: 5px 5px 7px rgb(138, 138, 138);
+}
+
+.border-primary{
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    box-shadow: 5px 5px 7px rgb(57, 101, 154);
+}
+.simbolo{
+    font-size: 34px;
+    margin-left: 5px;
+    margin-right: 50px;
+    vertical-align: bottom;
+}
+.simbolo:hover{
+    cursor: pointer;
+}
+
+.cabecera{
+    margin: 30px;
+    margin-bottom: 50px;
+}

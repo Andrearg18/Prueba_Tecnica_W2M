@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+
+<div align="center" class="cabecera">
+    <span>
+        <input name="buscar" [(ngModel)]="nombreBuscar" class="border-primary" type="text" placeholder="Buscar..."/>
+        <span class="simbolo" (click)="buscar()">🔍</span>
+    </span>
+    <a (click)="agregarHeroe()" class="card-btn btn btn-primary">+  Añadir</a>
+</div>
+
+<p class="mensaje" *ngIf="cargandoListado">Cargando héroes...</p>
+<p class="mensaje" *ngIf="sinResultados">No se encuentran resultados...</p>
+
+<div class="listado row">
+    <div class="col-6" *ngFor="let heroe of listaHeroes">
+        <app-item-heroe class="item" [heroe]="heroe"></app-item-heroe>
+      </div>
+</div>
+

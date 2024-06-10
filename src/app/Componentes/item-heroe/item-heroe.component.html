@@ -1,0 +1,29 @@
+<div class="heroe card mb-3" [routerLink]="['detalles', heroe.id]" routerLinkActivated="active">
+    <div class="card-header">
+      <table>
+        <tr>
+          <td class="imagen" rowspan="2">
+            <img src={{heroe.imagenUrl}}/>
+            <ng-template #loading>
+              <p>Cargando imagen...</p>
+            </ng-template>
+          </td>
+
+          <td class="titulo titulo-subtitulo">
+            {{heroe.nombre}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="subtitulo titulo-subtitulo">
+            {{heroe.nacimiento}}
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="card-body">
+      <p class="card-text">{{heroe.descripcion}}</p>
+    </div>
+  </div>
